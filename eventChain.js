@@ -1,3 +1,4 @@
+/*jshint node:true */
 /*global ig: true */
 ig.module(
   'game.system.eventChain'
@@ -93,4 +94,4 @@ global.EventChain = function() {
   return update;
 };
 
-}).bind(this, this));
+}).bind(typeof global !== 'undefined' ? global : this, typeof global !== 'undefined' ? global : this));
